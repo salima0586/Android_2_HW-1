@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_notes"
+        android:title="Dashboard"/>
+
+    <item
+        android:id="@+id/notificationFragment"
+        android:title="Notification"
+        android:icon="@drawable/ic_notifications"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Profile"
+        android:icon="@drawable/ic_identity"/>
+
+</menu>
