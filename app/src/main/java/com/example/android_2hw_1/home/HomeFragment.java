@@ -1,4 +1,4 @@
-package com.example.android_2hw_1;
+package com.example.android_2hw_1.home;
 
 import android.os.Bundle;
 
@@ -15,11 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.android_2hw_1.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
 
 public

@@ -1,4 +1,4 @@
-package com.example.android_2hw_1;
+package com.example.android_2hw_1.notification;
 
 import android.os.Bundle;
 
@@ -8,10 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.android_2hw_1.R;
+
 
 public
-class DashboardFragment extends Fragment {
-
+class NotificationFragment extends Fragment {
 
 
     @Override
@@ -19,6 +20,6 @@ class DashboardFragment extends Fragment {
     View onCreateView(LayoutInflater inflater, ViewGroup container,
                       Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate( R.layout.fragment_dashbord, container, false );
+        return inflater.inflate( R.layout.fragment_notification, container, false );
     }
 }

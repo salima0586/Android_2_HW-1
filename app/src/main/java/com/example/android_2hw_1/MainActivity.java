@@ -6,14 +6,18 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
+import android.view.View;
 
+import com.example.android_2hw_1.board.Prefs;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
 
 public
 class MainActivity extends AppCompatActivity {
 
-    private
-    NavController navController;
+    private NavController navController;
+    private ArrayList<Integer> list = new ArrayList<>();
 
 
     @Override
@@ -21,10 +25,14 @@ class MainActivity extends AppCompatActivity {
     void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
-        BottomNavigationView navigationView = findViewById( R.id.nav_view );
+        BottomNavigationView navView = findViewById( R.id.nav_view );
 
 
         navController = Navigation.findNavController( this,R.id.nav_host_fragment );
-        NavigationUI.setupWithNavController( navigationView, navController );
+        NavigationUI.setupWithNavController( navView, navController );
+
+        Prefs prefs = new Prefs(this);
+        if (!prefs.isShown()) navController.navigate(R.id.boardFragment);
+
     }
 }

@@ -1,4 +1,4 @@
-package com.example.android_2hw_1;
+package com.example.android_2hw_1.home;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -11,10 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+import com.example.android_2hw_1.R;
+
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public
 class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {

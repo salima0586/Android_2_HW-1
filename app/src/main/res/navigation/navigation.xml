@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.android_2hw_1.HomeFragment"
+        android:name="com.example.android_2hw_1.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.example.android_2hw_1.DashboardFragment"
+        android:name="com.example.android_2hw_1.dashboard.DashboardFragment"
         android:label="fragment_dashbord"
         tools:layout="@layout/fragment_dashbord" />
     <fragment
         android:id="@+id/notificationFragment"
-        android:name="com.example.android_2hw_1.NotificationFragment"
+        android:name="com.example.android_2hw_1.notification.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.android_2hw_1.ProfileFragment"
+        android:name="com.example.android_2hw_1.profile.ProfileFragment"
         android:label="fragment_frofile"
         tools:layout="@layout/fragment_frofile" />
     <fragment
@@ -30,4 +30,9 @@
         android:name="com.example.android_2hw_1.TaskFragment"
         android:label="fragment_task"
         tools:layout="@layout/fragment_task" />
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.example.android_2hw_1.board.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" />
 </navigation>

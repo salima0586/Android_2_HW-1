@@ -1,4 +1,4 @@
-package com.example.android_2hw_1;
+package com.example.android_2hw_1.home;
 
 public
 class Model {
