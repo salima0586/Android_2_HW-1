@@ -6,7 +6,9 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
+import android.widget.Toolbar;
 
 import com.example.android_2hw_1.board.Prefs;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -24,6 +26,7 @@ class MainActivity extends AppCompatActivity {
     protected
     void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
+
         setContentView( R.layout.activity_main );
         BottomNavigationView navView = findViewById( R.id.nav_view );
 
@@ -31,8 +34,14 @@ class MainActivity extends AppCompatActivity {
         navController = Navigation.findNavController( this,R.id.nav_host_fragment );
         NavigationUI.setupWithNavController( navView, navController );
 
-        Prefs prefs = new Prefs(this);
-        if (!prefs.isShown()) navController.navigate(R.id.boardFragment);
+        if (!Prefs.isShown()) navController.navigate(R.id.boardFragment);
 
+    }
+
+    @Override
+    public
+    boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate( R.menu.clear_data,menu );
+        return super.onCreateOptionsMenu( menu );
     }
 }
